@@ -8,8 +8,13 @@ export default async function askAi({prompt}) {
     const response = await ai.models.generateContent({
         model: "gemini-2.5-flash",
         contents: prompt || "Explain how AI works in a few words",
+        config: {
+          thinkingConfig: {
+            thinkingBudget: 0, // Disables thinking --faster response
+          },
+        },
     });
-    console.log(response.text);
+    // console.log(response.text);
     return response.text;
   }
   catch (error){
