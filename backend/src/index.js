@@ -4,8 +4,6 @@ import express from "express"
 import http from "http"
 import cors from "cors"
 
-import askAi from './utils/askAi.js';
-
 const app = express();
 
 app.use(express.json());
