@@ -28,7 +28,8 @@ const CodeSection = ({isReviewLoading, setIsReviewLoading, setReview}) => {
       <textarea className='w-full h-full resize-none focus:outline-0 font-mono'
       placeholder='Enter your code here...'
       onChange={(e) => setCode(e.target.value)}
-      value={code}>
+      value={code}
+      spellCheck={false}>
       </textarea>
       <Button className='absolute m-3 right-0 bottom-0 text-xl bg-amber-500' onClick={handleClick} disabled={isReviewLoading}>
         {isReviewLoading ? (
