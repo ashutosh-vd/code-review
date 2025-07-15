@@ -1,8 +1,16 @@
 {
   "name": "code-review",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application that takes a JavaScript code snippet and provides a review of the code using AI.",
   "keywords": [],
+  "homepage": "https://github.com/ashutosh-vd/code-review#readme",
+  "bugs": {
+    "url": "https://github.com/ashutosh-vd/code-review/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashutosh-vd/code-review.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "module",
